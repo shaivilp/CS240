@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/codin/Desktop/NIU/CS240/Assignment 0",
-      "program": "c:/Users/codin/Desktop/NIU/CS240/Assignment 0/build/Debug/outDebug",
+      "cwd": "c:/Users/codin/Desktop/NIU/CS240/Assignment 2",
+      "program": "c:/Users/codin/Desktop/NIU/CS240/Assignment 2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
