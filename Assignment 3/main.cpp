@@ -1,5 +1,5 @@
 /***************************************************************
-CSCI 240         Program 2    Spring 2024
+CSCI 240         Program 3     Spring 2024
 
 Programmer: Shaivil Patel
 
@@ -7,7 +7,7 @@ Section: 1
 
 Date Due: 1/26/2024
 
-Purpose: A program that will calculate and display the X and Y-coordinates for the vertex of a parabola.
+Purpose: A program that will calculate and display the X and Y-coordinates for the vertex of a parabola with error checking.
 ***************************************************************/
 #include <iostream>
 #include <iomanip>
@@ -29,7 +29,7 @@ int main() {
     cout << "Enter the c coefficient: ";
     cin >> cCoefficient;
 
-    cout << "\n\n"
+    cout << "\n\n";
 
     double xVertex = -bCoefficient / (2 * aCoefficient);
     double yVertex = aCoefficient * pow(xVertex, 2) + bCoefficient * xVertex + cCoefficient;
@@ -40,7 +40,7 @@ int main() {
     cout << "c Coefficient" << ELEVEN_LINE_SPACER << cCoefficient << endl;
     cout << "-------------------------------\n";
     cout << "Vertex\n";
-    cout << "X Coordinate" << ELEVEN_LINE_SPACER << sexVertex << endl;
+    cout << "X Coordinate" << ELEVEN_LINE_SPACER << xVertex << endl;
     cout << "Y Coordinate" << ELEVEN_LINE_SPACER << yVertex << "\n";
     cout << "-------------------------------\n";
     return 0;
