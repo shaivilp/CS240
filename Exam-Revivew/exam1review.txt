@@ -1,0 +1,163 @@
+Exam 1 Format:
+Part 1: Multiple Choice - 20 questions - 20 points
+        MUST be completed by 11:59pm on Friday, February 23
+        MUST use LockDown Browser
+
+Part 2: Short Answer/Coding - 80 points
+        MUST be completed *IN CLASS* on Wednesday, February 21
+        Exam will become available at 9:30am
+        MUST be submitted by 10:45am
+        MUST use LockDown Browser
+
+
+Exam 1 Topics:
+- Data Types
+- Formatting Output
+- Typecasting
+- Decision Statements
+- Loops
+- Symbloic Contants
+
+
+Sample problems are available on Blackboard under
+Content/Exams/Review Material
+
+--------------------------------------------------
+Decision Statements
+- they allow the program to decide what set of code to execute 
+- NOT a loop - only executed one time 
+
+all of these types of if statements will be on the Exam
+
+if(condition){
+        code to execute when the condition is true
+}
+
+if(condition) {
+        code to execute when the condition is true
+} else {
+        code to execute when the condition is false
+}
+
+//Called a cascading type of decision statement
+if(condition1){
+        code to execute when the condition is true
+} else if(condition2){
+        code to execute when condition1 is false and condition2 is true
+} else {
+        code to execute when all conditions are false
+}
+
+--------------------------------------------------
+Loops
+- allows a "chunk" of code to be executed multiple times
+- the "chunk" of code is known as the body of the loop
+
+format 1: - counting loop (for)
+for(initialization; condition; change){
+        body of the loop
+}
+
+- initialization: executed 1 time and is the first thing executed
+- condition: must give true or false result
+- body of the loop: - code to execute 1 time
+                   - always executed after a true condition result
+- change: always executed AFTER the body of the loop
+          goes to the condition after this part 
+- typically, the initialization, condition, and change portions of the loop with work with the same variable
+
+- top driven loop (condition is checked before executing the body of the loop)
+- minimum num of executions - 0
+- max num of executuions - many
+
+format 2: - not sure how many times something should repeat
+while(condition){
+        body of the loop
+}
+- top driven loop (condition is checked before executing the body of the loop)
+- minimum num of executions - 0
+- max num of executuions - many
+
+- "read" loop pattern
+priming read - goal is to get the first value
+while(condition) { - condition should test the value in variable from the priming read
+        process the value
+        secondary read - goal is to get the next value to process
+}
+
+
+format 3: body of the loop should execute at least one time
+do {
+        body of the loop
+}
+while(condition);
+
+- semi-colon is required
+- body of the loop executes first, then the condition is checked
+- the body of the loop with contuine to execute as long as the condition is true
+- bottom driven loop (body of the loop then the condition)
+
+- minimum num of executions - 1
+- max num of executions - many
+--------------------------------------------------
+Data Types
+int 
+- values without decimal points
+- range: +- 2 billion
+- literal values: as is 
+                  123
+float
+- values with decimal points
+- range: +- 10^38
+- literal values: as is
+                  123.45
+                  1.2e7 (1.2 * 10^7)
+- significant digits: 6
+
+double
+- values with decimal points
+- range: +- 10^308
+- literal values: as is
+                  123.45
+                  1.2e7 (1.2 * 10^7)
+- significant digits: 12
+
+char 
+- single character value
+- 255 possible values
+- literal values: must be in single quotes
+                  '*'
+                  'L'
+                  'a'
+
+*string
+- not a standard data type
+- multiple character value
+- range: 0 characters (empty string)
+         many characters
+- literal values: must be in double quotes
+                  "hello, world"
+                
+declare variables:
+- format 1: data_type variable_name;
+
+- format 2: data_type variable_name = value;
+--------------------------------------------------
+Formatting Output
+setw()
+setprecision
+fixed
+scientific
+left
+right
+internal
+showpos
+noshowpos
+endl
+\n
+--------------------------------------------------
+Typecasting
+
+--------------------------------------------------
+Symbloic Contant
+
