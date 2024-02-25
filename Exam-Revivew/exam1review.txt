@@ -18,7 +18,6 @@ Exam 1 Topics:
 - Loops
 - Symbloic Contants
 
-
 Sample problems are available on Blackboard under
 Content/Exams/Review Material
 
@@ -143,21 +142,113 @@ declare variables:
 
 - format 2: data_type variable_name = value;
 --------------------------------------------------
+
 Formatting Output
-setw()
-setprecision
-fixed
-scientific
-left
-right
-internal
-showpos
-noshowpos
-endl
-\n
+
+setw - sets a MINIMUM width to use when displaying a value
+     - must be a separate part of a cout statement (means it needs its own output operator)
+     - must be set BEFORE the value to format
+     - not persistent (means it must be set for each item that needs formatting)
+
+     int num = 24680, num2 = 135791;
+
+     cout << setw(7) << num;   //display num in a field 7 spaces wide
+
+     cout << setw(8) << num << setw(10) << num2;  //display num in a field 8 spaces wide
+                                                  //and num2 in a field 10 spaces wide
+
+
+setprecision - when used alone, sets the MAXIMUM number of digits to display, includes both before
+               and after the decimal point
+
+             double result = 12.5829;
+
+             cout << setprecision(4) << result;   //display the result value as 4 digits total
+ 
+             Displays as 12.58
+
+
+             - when used with fixed flag, sets number of digits after the decimal point
+
+             double result = 12.5829;
+
+             cout << setprecision(3) << fixed << result;   //display the result with 3 digits after dec. pt.
+ 
+             Displays as 12.583.  (the display gets rounded up because of 9 being next digit)
+
+             - no matter which version is used, must be separate part of cout
+             - must be set before the item to be formatted
+             - Persistent (only needs to be set one time)
+
+fixed - when paired with setprecision, fixes the number of digits after the decimal point'
+      - separate part of cout
+      - set before things to be formatted
+      - persistent
+
+scientific - display float/double values in scientific notation
+           - separate part of cout
+           - set before things to be formatted
+           - persistent
+
+left - display values left justified (trailing spaces)
+     - separate part of cout
+     - set before things to be formatted
+     - persistent
+
+right - display values right justified (leading spaces)
+      - separate part of cout
+      - set before things to be formatted
+      - persistent
+      - default justification if one is not set
+
+internal - display sign left justified, value is right justified
+         - an extra spaces are between sign and value
+         - separate part of cout
+         - set before things to be formatted
+         - persistent
+
+showpos - display positive values with a leading plus sign
+        - separate part of cout
+        - set before things to be formatted
+        - persistent
+
+noshowpos - turn off display of a plus sign before positive values
+          - separate part of cout
+          - set before things to be formatted
+          - persistent
+
+endl - newline character
+     - separate part of cout
+
+\n - newline character
+   - must be part of a string literal or used as a character literal
+
 --------------------------------------------------
 Typecasting
+- this makes a variable to behave like a different data type for one
+  Instance
 
+- the cast must "make sense" - for example, can cast from one numeric
+  type to another, but can't cast string to an integer
+
+- format:   (data_type) variable
 --------------------------------------------------
-Symbloic Contant
+Symbolic Contant
 
+- associates a name with a value that cannot be changed
+
+- the name is used throughout the code rather than the value
+
+- readability - use of the name makes the code easier to interpret
+
+- change-ability - any change to the value is made in only one location (where
+                   it was declared) rather than in multiple spots
+                 - this reduces the likelihood of mistakes
+
+- format 1 (C-style): #define NAME value
+
+                      #define PI 3.14159
+
+- format 2 (C++-style):  const data_type NAME = value;
+
+                         const double PI = 3.14159;
