@@ -28,19 +28,19 @@ cin >> upperBd;
 
 product = 1;
 
-/** answer with forloop **/
+/* answer with forloop */
 for(int i = 1; i <= upperBd; i++){
     product *= i;
 }
 
-/** answer with while loop **/
+/* answer with while loop */
 int count = 1;
 while(count <= upperBd){
     product *= count;
     count++;
 }
 
-/** answer with dowhile loop **/
+/* answer with dowhile loop */
 int count = 1;
 do {
    product *= count;
