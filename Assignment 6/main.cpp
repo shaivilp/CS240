@@ -1,11 +1,11 @@
 /***************************************************************
-CSCI 240         Program 5     Spring 2024
+CSCI 240         Program 6     Spring 2024
 
 Programmer: Shaivil Patel (z1989635)
 
 Section: 1
 
-Date Due: 3/1/2024
+Date Due: 3/8/2024
 
 Purpose: A calculator type of program that lets a user add, subtract, 
 multiply, divide, power of, and find the factorial of 2 numbers.
@@ -51,6 +51,33 @@ Arguments: n: integer value which holds the factorial we are calculating
 
 Returns:   int factorial
 ***************************************************************/
+
+int addition(int value1, int value2){
+    return value1 + value2;
+}
+
+int subtraction(int value1, int value2){
+    return value1 - value2;
+}
+
+int multiplication(int value1, int value2){
+    return value1 * value2;
+}
+
+int quotient(int value1, int value2){
+    return value1 / value2;
+}
+
+int power(int base, int power){
+    int total = 1;
+
+    for(int i = 0; i < power; i++){
+        total *= base;
+    }
+
+    return total;
+}
+
 int factorial(int n){
     int factorial = 1;
     for (int i = 1; i <= n; i++) {
