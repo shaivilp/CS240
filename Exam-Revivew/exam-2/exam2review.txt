@@ -1,0 +1,139 @@
+Exam 2 Format
+Part 1:	Multiple Choice
+        20 points -- 20 questions
+        Must be completed by 11:59 PM on Friday, April 12
+
+Part 2:	Short Answer and Coding
+	80 points -- 19 questions (currently)
+        Must be completed on Wednesday, April 10 (in Art Building)
+
+
+Sample problems and this text file are available on Blackboard under 
+Content/Exams/Review Material
+
+--------------------------------------
+
+Exam 2 Topics
+
+switch statement
+characters and character functions
+Functions
+Arrays
+Arrays and Functions
+
+--------------------------------------
+
+Functions
+- exam2review1.cpp
+
+- they allow isolate code that can then be reused in a program
+- the functions coded outside of int main()
+
+- they're used by calling the function and passing info into the function
+
+- function prototype
+  - tells the compiler that the function exists
+  - return data type, name of the function, data type for any agruments
+  - must end with a semi-colon
+
+- function header
+  - this is the start of the function
+  - return data type, name of the function, data type and the name for any agruments
+  
+  - each argument must have a data type
+  - arguments are separated by commas
+  - the names for the arguments are aliases for the information passed in
+
+  - for simple data types (int, double, string, float) the arguments are only copies and cannot change the initial value
+  - for compound data types (arrays) the arguments passed in are the direct variable and changes can be made
+
+- function body
+  - this is where the code / logic is placed to solve the problems
+  - must be between a set of curly braces
+  - use a return statement to return a value to the calling function
+
+- format
+  prototype: return_type func_name(arg_type, arg_type...);
+  header: return_type func_name(arg_type arg_name1, arg_type arg_name2){
+        function body / logic code
+  }
+
+--------------------------------------
+ 
+Arrays
+- exam2review2.cpp and exam2review3.cpp
+
+- compound data type
+  - something that can hold more then 1 value
+  - all of the values are the same data type
+
+- use a subscript to access an individual value
+- subscripts are always integers, regardless of array data type
+- subcripts always start at 0
+- subscripts always end at size - 1
+- to create an array: data type, name, how many values
+        data_type array_name[how_name_values];
+
+//Create an array to hold 75 strings
+string names[75];
+
+
+//Put your first name in the first spot of the array
+names[0] = "Patel";
+
+//Put your last name in the last spot of the array
+names[74] = "Shaivil";
+
+//Display all the strings in nameArray
+for(int i = 0; i < 75; i++){
+        cout << names[i] << endl;
+}
+
+//Ask the user how names to display and then display
+//that many names
+int value;
+cout << "How many values do you want to display?"
+cin >> value;
+
+for(int i = 0; i < value; i++){
+        cout << names[i] << endl;
+}
+
+//Display every other string in nameArray starting from subscript 7
+for(int i = 7; i < 75; i += 2){
+        cout << names[i] << endl;
+}
+--------------------------------------
+
+Arrays and Functions
+
+- exam2review4.cpp
+
+- function can make direct changes to an array that is declared
+  outside of the function
+
+- the address of the array is passed to the function 
+- the name of the array gives the address 
+
+prototype: return_type func_name(array_arg_type [], ....);
+
+header: return_type func_name(array_arg_type array_name[], ....){
+        function body
+}
+
+calling statement:
+_______ func_name(name_of_array, ....);
+where _______ is replaced based on what the fucntion returns
+or does not return 
+
+-------------------------------------- 
+
+switch statement
+
+- exam2review5.cpp
+
+--------------------------------------
+
+characters and character functions
+
+
