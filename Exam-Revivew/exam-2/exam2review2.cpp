@@ -20,7 +20,7 @@ int main(){
 float array[5] = {12.2, 25.9, 7.4, 11.1, 32.0};
 
 //Write a loop to display all the values in the array.
-for(int i = 0; i <= 4; i++){
+for(int i = 0; i < 5; i++){
     cout << array[i] << endl;
 }
 
@@ -34,7 +34,7 @@ for(int i = 4; i >= 0; i--){
 //Write a loop to add every other value in the array, starting
 //from subscript 1. Display the sum.
 double sum = 0.0;
-for(int i = 1; i <= 4; i += 2){
+for(int i = 1; i < 5; i += 2){
     sum += array[i];
 }
 

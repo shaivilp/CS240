@@ -50,7 +50,7 @@ class PiggyBank {
      Returns:   nothing
      ***************************************************************/
      void printBankValue(){
-          cout << "$" << setprecision(2) << calcPiggyBankValue();
+          cout << "$" << setprecision(2) << calcBankValue();
      }
 
      /***************************************************************

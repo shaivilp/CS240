@@ -21,7 +21,6 @@ char ch;
 
 cout << "Enter a character: ";
 cin >> ch;
-
 switch(ch){
     case 'F': {
         cout << "FirstName";
