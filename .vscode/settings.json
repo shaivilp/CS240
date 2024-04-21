@@ -60,7 +60,8 @@
     "iostream": "cpp",
     "ostream": "cpp",
     "cmath": "cpp",
-    "iomanip": "cpp"
+    "iomanip": "cpp",
+    "typeinfo": "cpp"
   },
   "C_Cpp.errorSquiggles": "enabled"
 }
