@@ -1,3 +1,15 @@
+/****************************************************************************
+CSCI 240         Program 10     Spring 2024
+
+Programmer: Shaivil Patel (z1989635)
+
+Section: 1
+
+Date Due: 5/2/2024
+
+Purpose: Use Object Oriented Programming and cstyle strings to create a Employee class
+****************************************************************************/
+
 #include <iostream>
 #include <iomanip>
 #include <cstring>
