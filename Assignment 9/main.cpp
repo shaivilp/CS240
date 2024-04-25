@@ -26,23 +26,9 @@ private:
     int numQuarters;
 
 public:
-    // Empty class constructor
-    PiggyBank(){
-        emptyTheBank();
-    }
-
-    // Contructor with 4 arguments to set the values of the bank
-    PiggyBank(int pennies, int nickels, int dimes, int quarters){
-        emptyTheBank();
-        addCoins(pennies, nickels, dimes, quarters);
-    }
-    //Constructor that copies values from another bank object
-    PiggyBank(const PiggyBank &otherBank){
-        numDimes = otherBank.numDimes;
-        numNickels = otherBank.numNickels;
-        numPennies = otherBank.numPennies;
-        numQuarters = otherBank.numQuarters;
-    }
+    PiggyBank();
+    PiggyBank(int pennies, int nickels, int dimes, int quarters);
+    PiggyBank(const PiggyBank &otherBank);
 
     void print(string);
     void printBank();
@@ -152,6 +138,26 @@ void printSectionTitle(string title){
     cout << title << endl;
     cout << endl;
 }
+
+//Empty constructor
+PiggyBank::PiggyBank(){
+    emptyTheBank();
+}
+
+// Contructor with 4 arguments to set the values of the bank
+PiggyBank::PiggyBank(int pennies, int nickels, int dimes, int quarters){
+    emptyTheBank();
+    addCoins(pennies, nickels, dimes, quarters);
+}
+
+//Constructor that copies values from another bank object
+PiggyBank::PiggyBank(const PiggyBank &otherBank){
+    numDimes = otherBank.numDimes;
+    numNickels = otherBank.numNickels;
+    numPennies = otherBank.numPennies;
+    numQuarters = otherBank.numQuarters;
+}
+
 
 /***************************************************************
 Function: print

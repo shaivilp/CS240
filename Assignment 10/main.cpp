@@ -25,18 +25,8 @@ class Employee{
         double salary;
 
     public:
-        //Empty Construtor
-        Employee(){
-            strcpy(name, "None");
-            strcpy(id, "ACB1234");
-            salary = 0.0;
-        }
-        //Three arg construtor
-        Employee(char newName[], char newId[], double newSalary){
-            strcpy(name, newName);
-            setIDnum(newId);
-            setSalary(newSalary);
-        }
+        Employee();
+        Employee(char[], char[], double);
 
         void display();
         void increaseSalary(double raise);
@@ -88,6 +78,20 @@ int main(){
     employee5.display();
 
     return 0;
+}
+
+//Empty Construtor
+Employee::Employee(){
+    strcpy(name, "None");
+    strcpy(id, "ACB1234");
+    salary = 0.0;
+}
+
+//Three arg construtor
+Employee::Employee(char newName[], char newId[], double newSalary){
+    strcpy(name, newName);
+    setIDnum(newId);
+    setSalary(newSalary);
 }
 
 /***************************************************************
