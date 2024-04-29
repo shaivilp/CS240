@@ -36,7 +36,7 @@ public:
     void emptyTheBank();
 
     PiggyBank addBanks(int, int, int, int);
-    PiggyBank addBanks(PiggyBank);
+    PiggyBank addBanks(PiggyBank&);
 
     void addCoins(int, int, int, int);
     void addPennies(int);
@@ -46,9 +46,9 @@ public:
 
     double calcBankValue();
     bool isEqual(int, int, int, int);
-    bool isEqual(PiggyBank);
+    bool isEqual(PiggyBank&);
     bool isLessThan(int, int, int, int);
-    bool isLessThan(PiggyBank);
+    bool isLessThan(PiggyBank&);
     int getCoin(int);
 };
 
